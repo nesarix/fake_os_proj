@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>macintosh</title>
+	</head>
+	<body>
+		<nav class="nav">
+			<ul class="nav__menu">
+				<li class="nav__menu--apple-container">
+					<img
+						class="nav__menu--apple"
+						src="./images/AppleLogosolidblk.png"
+						alt="solid black apple icon pixel"
+					/>
+				</li>
+				<li class="visual">File</li>
+				<li class="visual">Edit</li>
+				<li class="visual">View</li>
+				<li class="visual">Special</li>
+				<li class="nav__menu--clock-time">time</li>
+			</ul>
+		</nav>
+
+		<section class="menu"></section>
+		<div class="desktop">
+			<section class="app__save">
+				<img
+					class="app__save--img"
+					id="openModalImg1"
+					src="./images/bgrem.png"
+					alt="floppy"
+				/>
+				<p class="app__save--text">Macpaint</p>
+			</section>
+
+			<section class="app__text">
+				<img
+					class="app__text--img"
+					id="openModalList"
+					src="./images/text.png"
+					alt="text file image"
+				/>
+				<p class="app__text--text">shopping list</p>
+			</section>
+			<section class="app__recycle">
+				<img
+					class="app__recycle--img"
+					id="openModalTrash"
+					src="./images/bin.png"
+					alt="trash"
+				/>
+				<p class="app__recycle--text">Trash</p>
+			</section>
+			<section class="modal" id="modal">
+				<p class="modal__fileTitle" id="modal__fileTitle"></p>
+			</section>
+			<!-- <section class="modalTrash" id="modalTrash">
+				<p class="modalTrash__fileTitle" id="modalTrash__fileTitle"></p>
+				<video src="./images/trash black and white.mp4"></video>
+			</section> -->
+		</div>
+	</body>
+	<script src="script.js"></script>
+</html>
