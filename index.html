@@ -8,7 +8,7 @@
 		<title>macintosh</title>
 	</head>
 	<body>
-		<nav class="nav">
+		<nav class="nav" id="nav">
 			<ul class="nav__menu">
 				<li class="nav__menu--apple-container">
 					<img
@@ -17,17 +17,25 @@
 						alt="solid black apple icon pixel"
 					/>
 				</li>
-				<li class="visual">File</li>
+				<li class="visual" id="fileOpen">File</li>
 				<li class="visual">Edit</li>
 				<li class="visual">View</li>
 				<li class="visual">Special</li>
-				<li class="nav__menu--clock-time">time</li>
+				<li class="nav__menu--clock-time" id="clock"></li>
 			</ul>
 		</nav>
+		<section class="menuModal" id="menuModal">
+			<ul class="menuModal__ul" id="menuModal__ul">
+				<li>New Folder</li>
+				<li>Open</li>
+				<li>Print</li>
+				<li id="fileClose">Close</li>
+			</ul>
+		</section>
 
 		<section class="menu"></section>
-		<div class="desktop">
-			<section class="app__save">
+		<div class="desktop" id="desktop">
+			<section class="app__save app">
 				<img
 					class="app__save--img"
 					id="openModalImg1"
@@ -57,11 +65,8 @@
 			</section>
 			<section class="modal" id="modal">
 				<p class="modal__fileTitle" id="modal__fileTitle"></p>
+				<div id="clearInside" class="clearInside"></div>
 			</section>
-			<!-- <section class="modalTrash" id="modalTrash">
-				<p class="modalTrash__fileTitle" id="modalTrash__fileTitle"></p>
-				<video src="./images/trash black and white.mp4"></video>
-			</section> -->
 		</div>
 	</body>
 	<script src="script.js"></script>
